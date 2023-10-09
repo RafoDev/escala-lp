@@ -1,0 +1,25 @@
+
+:root {
+  --font-family-1 :'Lato', sans-serif;
+  --font-family-logo: "Merriweather", serif;
+  --primary-color: #6f56a6;
+  --light-color: rgb(255, 255, 255);
+}
+
+@import 'mixins', 'header', 'nav', 'hero', 'about', 'main', 'allies', 'programs', 'footer';
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  margin: 0;
+  font-family: var(--font-family-1);
+  display: flex;
+  flex-direction: column  ;
+}
+
+
+

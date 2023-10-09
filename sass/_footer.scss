@@ -1,0 +1,76 @@
+.footer {
+  background-color: #242424;
+  color: var(--light-color);
+  width: 100%;
+  overflow: hidden;
+  //   min-height: 50vh;
+  &__container {
+    overflow: hidden;
+
+    margin: 1vh auto;
+    display: grid;
+    padding: 1rem;
+    max-width: 1200px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "logo  contact"
+      "sm  contact";
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    gap: 1rem 1rem;
+  }
+  &__contact {
+    grid-area: contact;
+  }
+}
+
+.social-media {
+  place-self: center start;
+  grid-area: sm;
+  display: flex;
+  gap: 0.5rem;
+  &__container {
+  }
+  &__icon {
+  }
+}
+
+.contact {
+  font-size: 0.8rem;
+  display: flex;
+  gap: 0.2rem;
+  &__icon {
+  }
+  &__text {
+    margin: 0.5rem;
+  }
+}
+
+.logo--footer {
+  grid-area: logo;
+  width: 120px;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .logo--footer {
+    width: 200px;
+  }
+
+  .social-media {
+    place-self: center start;
+    grid-area: sm;
+    display: flex;
+    gap: 1rem;
+    &__container {
+    }
+    &__icon {
+    }
+  }
+
+  .contact {
+    font-size: 1.1rem;
+  }
+}

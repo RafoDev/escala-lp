@@ -1,0 +1,39 @@
+@mixin btn{
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+
+  &:hover {
+    opacity: 90%;
+  }
+}
+
+@mixin section-title{
+    font-weight: bold;
+    margin-top: 0;
+}
+
+@mixin title-decoration{
+  position: relative;
+  display: block;
+  &::after{
+    content: " ";
+    width: 40px;
+    background-color: #6f56a6;
+    height: 5px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+  }
+  &::before{
+    content: " ";
+    width: 100vw;
+    background-color: #a5a5a57c;
+    height: 1px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+  }
+}

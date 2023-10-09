@@ -1,0 +1,10 @@
+.hero
+{
+    z-index: 10;
+    margin: 0;
+    width: 100%;
+    object-fit: fill;
+    &__image{
+        width: 100%;
+    }
+}
